@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="hy">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080b10">
+  <title>RSD CYBERSPORT — PUBG MOBILE</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800;900&family=Noto+Sans+Armenian:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#080b10;--panel:#10151d;--panel2:#141b25;--line:rgba(255,255,255,.09);--muted:#8d98a8;--white:#f4f6f8;--lime:#d7ff45;--lime2:#b9e52b}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--white);font-family:Manrope,"Noto Sans Armenian",sans-serif}
+    body:before{content:"";position:fixed;inset:0;pointer-events:none;background:radial-gradient(ellipse at 80% 8%,rgba(215,255,69,.08),transparent 30%),linear-gradient(135deg,transparent 60%,rgba(255,255,255,.015));z-index:-1}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1120px,calc(100% - 40px));margin:auto}
+    header{height:82px;border-bottom:1px solid var(--line);display:flex;align-items:center}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:12px;font-weight:900;letter-spacing:2px}.brand-mark{width:42px;height:42px;border:2px solid var(--lime);display:grid;place-items:center;color:var(--lime);font-size:17px;font-weight:900;transform:skew(-8deg)}.brand small{display:block;color:var(--muted);font-size:9px;letter-spacing:3px;margin-top:2px}
+    .navlinks{display:flex;align-items:center;gap:28px;color:#aab3bf;font-size:12px;font-weight:700}.navlinks a:hover{color:var(--lime)}
+    .nav-cta,.btn{display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--lime);background:var(--lime);color:#10140a;padding:13px 20px;font-size:11px;font-weight:900;letter-spacing:.6px;text-transform:uppercase;transition:.2s;cursor:pointer}.nav-cta:hover,.btn:hover{background:transparent;color:var(--lime)}
+    .hero{padding:82px 0 58px;position:relative;overflow:hidden}.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:50px}.eyebrow{display:flex;align-items:center;gap:10px;color:var(--lime);font-size:10px;font-weight:900;letter-spacing:2.8px;text-transform:uppercase}.dot{width:7px;height:7px;background:var(--lime);border-radius:50%;box-shadow:0 0 14px var(--lime)}
+    h1{font-size:clamp(42px,6vw,76px);line-height:.98;letter-spacing:-3px;margin:22px 0 18px;font-weight:900;text-transform:uppercase}h1 span{color:var(--lime)}.lead{max-width:510px;color:#9ca7b5;line-height:1.8;font-size:14px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.btn.secondary{background:transparent;color:var(--white);border-color:var(--line)}.btn.secondary:hover{border-color:var(--lime);color:var(--lime)}
+    .visual{min-height:350px;position:relative;display:grid;place-items:center}.visual-card{width:100%;height:330px;border:1px solid rgba(215,255,69,.25);background:linear-gradient(145deg,rgba(215,255,69,.1),rgba(18,25,35,.96) 42%),repeating-linear-gradient(135deg,transparent 0 18px,rgba(255,255,255,.025) 19px 20px);position:relative;overflow:hidden;display:flex;align-items:flex-end;padding:28px}.visual-card:before{content:"RSD";position:absolute;font-size:clamp(100px,18vw,210px);font-weight:900;letter-spacing:-15px;color:rgba(215,255,69,.09);top:15px;left:10px}.visual-card:after{content:"";position:absolute;width:260px;height:260px;border:1px solid rgba(215,255,69,.3);border-radius:50%;right:-55px;top:-60px;box-shadow:0 0 0 25px rgba(215,255,69,.025),0 0 0 55px rgba(215,255,69,.02)}.visual-label{position:relative;z-index:1}.visual-label strong{display:block;font-size:28px;letter-spacing:1px}.visual-label small{color:var(--lime);font-size:10px;letter-spacing:3px;font-weight:800}
+    .stats{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--line);background:rgba(16,21,29,.8);margin:10px auto 76px}.stat{padding:22px 26px;border-right:1px solid var(--line)}.stat:last-child{border:0}.stat strong{display:block;font-size:25px;font-weight:900}.stat span{font-size:10px;color:var(--muted);letter-spacing:1.4px;text-transform:uppercase}
+    section{padding:34px 0 76px}.section-head{margin-bottom:28px}.section-head small{color:var(--lime);font-size:10px;font-weight:900;letter-spacing:2.5px}.section-head h2{font-size:30px;margin:10px 0 0;letter-spacing:-1px}.section-head p{color:var(--muted);font-size:13px;line-height:1.7}
+    .register-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:22px;align-items:stretch}.info-panel,.form-panel{background:var(--panel);border:1px solid var(--line);padding:30px}.info-panel{background:linear-gradient(145deg,#151d28,#0e131b)}.info-panel h3{font-size:22px;margin:0 0 12px}.info-panel p{font-size:12px;line-height:1.8;color:var(--muted)}.info-line{display:flex;gap:12px;align-items:center;padding:14px 0;border-top:1px solid var(--line);font-size:12px}.info-line b{color:var(--lime);font-size:10px;letter-spacing:1px;min-width:64px}
+    .form-panel h3{margin:0 0 7px;font-size:20px}.form-sub{color:var(--muted);font-size:11px;margin-bottom:24px}.field{margin-bottom:17px}.field label{display:block;color:#b8c1cd;font-size:10px;font-weight:800;letter-spacing:1px;text-transform:uppercase;margin-bottom:8px}.field input{width:100%;height:48px;background:#090e15;border:1px solid #293340;color:#fff;padding:0 14px;font:600 13px Manrope,"Noto Sans Armenian",sans-serif;outline:none;border-radius:0}.field input:focus{border-color:var(--lime)}.phone-input{display:flex;border:1px solid #293340;background:#090e15}.phone-prefix{display:flex;align-items:center;padding:0 14px;color:var(--lime);font-size:13px;font-weight:900;border-right:1px solid #293340}.phone-input input{border:0;flex:1;min-width:0}.phone-input:focus-within{border-color:var(--lime)}.hint{color:#718091;font-size:10px;margin-top:7px}.submit{width:100%;height:50px;margin-top:5px}.message{display:none;margin-top:15px;padding:12px 14px;font-size:12px;line-height:1.6;border:1px solid var(--line)}.message.show{display:block}.message.success{color:var(--lime);border-color:rgba(215,255,69,.35)}.message.error{color:#ff8585;border-color:rgba(255,100,100,.35)}
+    .rules{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.rule{padding:22px;background:var(--panel);border:1px solid var(--line)}.rule b{display:block;color:var(--lime);font-size:11px;letter-spacing:1px;margin-bottom:10px}.rule p{margin:0;color:#9ba6b4;font-size:12px;line-height:1.8}
+    footer{border-top:1px solid var(--line);padding:28px 0;color:#788493;font-size:10px;letter-spacing:1px}.footer-inner{display:flex;justify-content:space-between;gap:20px;align-items:center}.footer-inner strong{color:var(--white);letter-spacing:2px}
+    @media(max-width:760px){.navlinks{display:none}.hero{padding:56px 0 35px}.hero-grid,.register-grid{grid-template-columns:1fr}.visual{min-height:230px}.visual-card{height:230px}.stats{margin-bottom:45px}.stat{padding:16px 12px}.stat strong{font-size:20px}.stat span{font-size:8px}.rules{grid-template-columns:1fr}.info-panel,.form-panel{padding:22px}.section-head h2{font-size:25px}.footer-inner{align-items:flex-start;flex-direction:column}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="#">
+        <span class="brand-mark">RSD</span>
+        <span>RSD CYBERSPORT<small>PUBG MOBILE TOURNAMENT</small></span>
+      </a>
+      <nav class="navlinks"><a href="#about">ՄՐՑԱՇԱՐԻ ՄԱՍԻՆ</a><a href="#register">ԳՐԱՆՑՈՒՄ</a><a href="#rules">ԿԱՆՈՆՆԵՐ</a></nav>
+      <a class="nav-cta" href="#register">ԳՐԱՆՑՎԵԼ ↗</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="about">
+      <div class="wrap hero-grid">
+        <div>
+          <div class="eyebrow"><span class="dot"></span> PUBG MOBILE • ERANGEL</div>
+          <h1>ENTER THE<br><span>BATTLE.</span></h1>
+          <p class="lead">Միացիր RSD CYBERSPORT PUBG MOBILE մրցաշարին։ Ցույց տուր քո խաղային հմտությունները, պայքարիր հաղթանակի համար և դարձիր մրցաշարի մի մասը։</p>
+          <div class="hero-actions"><a class="btn" href="#register">ԳՐԱՆՑՎԵԼ ՀԻՄԱ ↗</a><a class="btn secondary" href="#rules">ԾԱՆՈԹԱՆԱԼ ԿԱՆՈՆՆԵՐԻՆ</a></div>
+        </div>
+        <div class="visual"><div class="visual-card"><div class="visual-label"><small>RSD • COMPETITIVE SERIES</small><strong>NO LIMITS.<br>ONLY SKILL.</strong></div></div></div>
+      </div>
+    </section>
+
+    <div class="wrap stats">
+      <div class="stat"><strong>ERANGEL</strong><span>Քարտեզ</span></div>
+      <div class="stat"><strong id="playerCount">0/99</strong><span>Գրանցված մասնակիցներ</span></div>
+      <div class="stat"><strong>SOLO</strong><span>Խաղի ձևաչափ</span></div>
+    </div>
+
+    <section id="register">
+      <div class="wrap">
+        <div class="section-head"><small>01 / REGISTRATION</small><h2>ԳՐԱՆՑՈՒՄ ՄՐՑԱՇԱՐԻՆ</h2><p>Լրացրու տվյալներդ՝ մասնակցության հայտ ուղարկելու համար։ Բոլոր դաշտերը պարտադիր են։</p></div>
+        <div class="register-grid">
+          <div class="info-panel">
+            <h3>ՊԱՏՐԱՍՏ ԵՍ ՄԱՍՆԱԿՑԵԼՈՒ՞</h3>
+            <p>Գրանցվելուց հետո քո տվյալները կուղարկվեն կազմակերպչին։ Համոզվիր, որ PUBG ID-ն և հեռախոսահամարը ճիշտ են։</p>
+            <div class="info-line"><b>MODE</b><span>SOLO • CLASSIC</span></div>
+            <div class="info-line"><b>MAP</b><span>ERANGEL</span></div>
+            <div class="info-line"><b>LIMIT</b><span>Մինչև 99 մասնակից</span></div>
+            <div class="info-line"><b>NOTICE</b><span>Մանրամասները կստանաս կազմակերպչից</span></div>
+          </div>
+          <div class="form-panel">
+            <h3>ՄԱՍՆԱԿՑԻ ՏՎՅԱԼՆԵՐԸ</h3>
+            <div class="form-sub">Լրացրու բոլոր դաշտերը ճշգրիտ կերպով</div>
+            <form id="registrationForm">
+              <div class="field"><label for="nickname">PUBG NICKNAME</label><input id="nickname" name="nickname" maxlength="24" placeholder="Մուտքագրիր քո Nickname-ը" required></div>
+              <div class="field"><label for="playerId">PUBG MOBILE ID</label><input id="playerId" name="playerId" inputmode="numeric" maxlength="24" placeholder="Մուտքագրիր քո Player ID-ն" required></div>
+              <div class="field"><label for="phone">ՀԵՌԱԽՈՍԱՀԱՄԱՐ</label><div class="phone-input"><span class="phone-prefix">+374</span><input id="phone" name="phone" type="tel" inputmode="numeric" maxlength="8" placeholder="XX XXX XXX" pattern="[0-9]{8}" required></div><div class="hint">Մուտքագրիր միայն 8 թվանշանը՝ առանց +374 կոդի</div></div>
+              <button class="btn submit" id="submitButton" type="submit">ՈՒՂԱՐԿԵԼ ԳՐԱՆՑՄԱՆ ՀԱՅՏԸ ↗</button>
+              <div class="message" id="formMessage" role="status"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="rules">
+      <div class="wrap">
+        <div class="section-head"><small>02 / TOURNAMENT RULES</small><h2>ՄՐՑԱՇԱՐԻ ԿԱՆՈՆՆԵՐԸ</h2><p>Մասնակցելով մրցաշարին՝ մասնակիցը համաձայնում է պահպանել կազմակերպչի սահմանած կանոնները։</p></div>
+        <div class="rules">
+          <div class="rule"><b>01 — FAIR PLAY</b><p>Արգելվում է ցանկացած տեսակի cheat, hack կամ անարդար առավելություն տվող ծրագիր։</p></div>
+          <div class="rule"><b>02 — ACCURATE DATA</b><p>Գրանցման ժամանակ տրամադրիր քո իրական PUBG ID-ն և կապի գործող հեռախոսահամարը։</p></div>
+          <div class="rule"><b>03 — RESPECT</b><p>Պահպանիր հարգալից վերաբերմունք մյուս մասնակիցների և կազմակերպիչների նկատմամբ։</p></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="wrap footer-inner"><strong>RSD CYBERSPORT</strong><span>© 2026 RSD • PUBG MOBILE COMMUNITY</span></div></footer>
+
+  <script>
+    const $ = (id) => document.getElementById(id);
+
+    async function loadStatus() {
+      try {
+        const response = await fetch("/api/status");
+        const data = await response.json();
+        $("playerCount").textContent = `${data.count}/${data.maxPlayers}`;
+      } catch (error) {
+        console.error("Status load failed:", error);
+      }
+    }
+
+    $("registrationForm").addEventListener("submit", async (event) => {
+      event.preventDefault();
+
+      const button = $("submitButton");
+      const message = $("formMessage");
+      const nickname = $("nickname").value.trim();
+      const playerId = $("playerId").value.trim();
+      const phoneDigits = $("phone").value.replace(/\D/g, "");
+
+      message.className = "message";
+      message.textContent = "";
+
+      if (!/^\d{8}$/.test(phoneDigits)) {
+        message.textContent = "Հեռախոսահամարը պետք է պարունակի ճիշտ 8 թվանշան։";
+        message.classList.add("show", "error");
+        return;
+      }
+
+      button.disabled = true;
+      button.textContent = "ՈՒՂԱՐԿՎՈՒՄ Է...";
+
+      try {
+        const response = await fetch("/api/register", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            nickname,
+            playerId,
+            phone: "+374" + phoneDigits
+          })
+        });
+
+        const result = await response.json();
+
+        if (!response.ok) {
+          throw new Error(result.message || "Գրանցումը չհաջողվեց։");
+        }
+
+        message.textContent = result.message || "Գրանցումը հաջողությամբ ընդունվեց։";
+        message.classList.add("show", "success");
+        $("registrationForm").reset();
+        await loadStatus();
+
+      } catch (error) {
+        message.textContent = error.message || "Սխալ տեղի ունեցավ։ Փորձիր կրկին։";
+        message.classList.add("show", "error");
+      } finally {
+        button.disabled = false;
+        button.textContent = "ՈՒՂԱՐԿԵԼ ԳՐԱՆՑՄԱՆ ՀԱՅՏԸ ↗";
+      }
+    });
+
+    loadStatus();
+  </script>
+</body>
+</html>
